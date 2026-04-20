@@ -1,28 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Voting System</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japhet Cheremo Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>ONLINE VOTING SYSTEM</h1>
-    <p id="timer">Loading timer...</p>
-  </header>
+<nav>
+  <h2>JC Portfolio</h2>
 
-  <main>
-    <div class="container" id="candidates"></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#donate">Buy Coffee ☕</a>
 
-    <div class="center">
-      <a href="results.html">
-        <button type="button">View Results</button>
-      </a>
+    <button onclick="toggleDark()" class="dark-btn">🌙</button>
+  </div>
+</nav>
+
+<header class="hero">
+
+  <div class="slider">
+    <div class="slides">
+
+      <div class="slide">
+        <img src="cheremo.jpeg" alt="slide">
+      </div>
+
+      
+
     </div>
-  </main>
+  </div>
 
-  <script src="data.js"></script>
-  <script src="script.js"></script>
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <h1>Japhet Cheremo</h1>
+    <p>Software Developer | Web Developer | Analyst</p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+  </div>
+
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate developer building modern web applications and backend systems.
+  </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill"><p>HTML</p><div class="bar"><div class="fill html"></div></div></div>
+  <div class="skill"><p>CSS</p><div class="bar"><div class="fill css"></div></div></div>
+  <div class="skill"><p>JavaScript</p><div class="bar"><div class="fill js"></div></div></div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Voting System</h3>
+    <a href="https://japhetcheremo-cloud.github.io/repository/" target="_blank">Open</a>
+  </div>
+
+  <div class="project">
+    <h3>Centrines Collection</h3>
+    <a href="https://japhetcheremo-cloud.github.io/centrines-collection/" target="_blank">Open</a>
+  </div>
+
+  <div class="project">
+    <h3>Hope Believers Ministry</h3>
+    <a href="https://japhetcheremo-cloud.github.io/hope-belivers-ministry/" target="_blank">Open</a>
+  </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- ================= MPESA ================= -->
+<section id="donate">
+  <h2>Buy Me Coffee ☕</h2>
+
+  <div class="mpesa-card">
+    <input type="text" placeholder="Phone Number">
+    <input type="number" placeholder="Amount (KES)">
+    <button onclick="payMpesa()">Pay with M-Pesa</button>
+    <p id="mpesa-status"></p>
+
+    <small>Till: 0719678760</small>
+  </div>
+</section>
+
+<!-- ================= SOCIAL ================= -->
+<footer>
+
+  <div class="social-icons">
+    <a href="https://wa.me/254719678760"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.tiktok.com/@japhet.cheremo"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61564247063691"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/honjaphetcheremo/"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:japhetcheremo@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <p>© 2026 Japhet Cheremo</p>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/254719678760" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
