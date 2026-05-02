@@ -1,142 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japhet Cheremo Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website for Japhet Cheremo, software developer, web developer, and analyst.">
+  <title>Japhet Cheremo | Software Developer</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Japhet Cheremo home">
+        <span>JC</span>
+        Portfolio
+      </a>
 
-<nav>
-  <h2>JC Portfolio</h2>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="#donate">Buy Coffee ☕</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#coffee">Coffee</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-    <button onclick="toggleDark()" class="dark-btn">🌙</button>
-  </div>
-</nav>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <img src="cheremo.jpeg" alt="">
+      </div>
+      <div class="hero-overlay"></div>
 
-<header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Software Developer | Web Developer | Analyst</p>
+        <h1>Japhet Cheremo builds clean, useful digital products for real people.</h1>
+        <p class="hero-copy">
+          I design and develop modern web applications, backend systems, and data-driven tools with a focus on speed, clarity, and reliability.
+        </p>
 
-  <div class="slider">
-    <div class="slides">
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="mailto:japhetcheremo@gmail.com">Hire Me</a>
+        </div>
 
-      <div class="slide">
-        <img src="cheremo.jpeg" alt="slide">
+        <div class="hero-stats" aria-label="Professional highlights">
+          <article>
+            <strong>3+</strong>
+            <span>Live Projects</span>
+          </article>
+          <article>
+            <strong>Full Stack</strong>
+            <span>Frontend and backend</span>
+          </article>
+          <article>
+            <strong>Kenya</strong>
+            <span>Available remotely</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Developer with a practical, solution-first mindset.</h2>
       </div>
 
-      
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I am a passionate developer focused on building modern websites, web applications, backend systems, and digital tools that help businesses and communities work better.
+          </p>
+          <p>
+            My work combines clean user interfaces, dependable code, and thoughtful problem solving. I enjoy turning ideas into products people can open, understand, and use immediately.
+          </p>
+        </div>
 
+        <div class="service-list" aria-label="Services">
+          <article>
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Responsive websites, portfolios, dashboards, and business pages.</p>
+          </article>
+          <article>
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend Systems</h3>
+            <p>Application logic, databases, APIs, and admin workflows.</p>
+          </article>
+          <article>
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Analysis</h3>
+            <p>Clear reporting, digital records, and data-informed decisions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I use to build dependable digital experiences.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-top">
+            <span>HTML</span>
+            <strong>90%</strong>
+          </div>
+          <div class="meter"><span style="width: 90%"></span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top">
+            <span>CSS</span>
+            <strong>88%</strong>
+          </div>
+          <div class="meter"><span style="width: 88%"></span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top">
+            <span>JavaScript</span>
+            <strong>82%</strong>
+          </div>
+          <div class="meter"><span style="width: 82%"></span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top">
+            <span>UI Design</span>
+            <strong>78%</strong>
+          </div>
+          <div class="meter"><span style="width: 78%"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work with real links and clear outcomes.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-check-to-slot"></i></div>
+          <p class="project-type">Civic Tech</p>
+          <h3>Voting System</h3>
+          <p>A digital voting experience built to make candidate selection simple and accessible.</p>
+          <a href="https://japhetcheremo-cloud.github.io/repository/" target="_blank" rel="noopener noreferrer">
+            Open Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+          <p class="project-type">E-commerce</p>
+          <h3>Centrines Collection</h3>
+          <p>A product showcase for fashion and collection browsing with a clean shopping feel.</p>
+          <a href="https://japhetcheremo-cloud.github.io/centrines-collection/" target="_blank" rel="noopener noreferrer">
+            Open Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-hands-praying"></i></div>
+          <p class="project-type">Community</p>
+          <h3>Hope Believers Ministry</h3>
+          <p>A ministry website built to share information, messages, and community updates.</p>
+          <a href="https://japhetcheremo-cloud.github.io/hope-belivers-ministry/" target="_blank" rel="noopener noreferrer">
+            Open Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Have a project in mind? Let us talk.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <a href="mailto:japhetcheremo@gmail.com"><i class="fa-solid fa-envelope"></i> japhetcheremo@gmail.com</a>
+          <a href="https://wa.me/254719678760" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +254 719 678 760</a>
+          <a href="https://www.instagram.com/honjaphetcheremo/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> @honjaphetcheremo</a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section coffee-section" id="coffee">
+      <div class="coffee-card">
+        <div>
+          <p class="eyebrow">Support</p>
+          <h2>Buy Me Coffee</h2>
+          <p>Support my work through M-Pesa. This demo shows a payment request message for your portfolio visitors.</p>
+        </div>
+
+        <form class="mpesa-form" id="mpesaForm">
+          <input type="tel" id="mpesaPhone" placeholder="Phone number e.g. 0719678760" required>
+          <input type="number" id="mpesaAmount" placeholder="Amount in KES" min="1" required>
+          <button type="submit">Pay with M-Pesa</button>
+          <small>Till / Phone: 0719678760</small>
+          <p id="mpesaStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social-icons" aria-label="Social links">
+      <a href="https://wa.me/254719678760" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.tiktok.com/@japhet.cheremo" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61564247063691" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/honjaphetcheremo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:japhetcheremo@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
     </div>
-  </div>
+    <p>&copy; 2026 Japhet Cheremo. All rights reserved.</p>
+  </footer>
 
-  <div class="overlay"></div>
+  <a href="https://wa.me/254719678760" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-  <div class="hero-text">
-    <h1>Japhet Cheremo</h1>
-    <p>Software Developer | Web Developer | Analyst</p>
-
-    <div class="buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn-outline">Contact Me</a>
-    </div>
-  </div>
-
-</header>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a passionate developer building modern web applications and backend systems.
-  </p>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills">
-  <h2>Skills</h2>
-
-  <div class="skill"><p>HTML</p><div class="bar"><div class="fill html"></div></div></div>
-  <div class="skill"><p>CSS</p><div class="bar"><div class="fill css"></div></div></div>
-  <div class="skill"><p>JavaScript</p><div class="bar"><div class="fill js"></div></div></div>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Voting System</h3>
-    <a href="https://japhetcheremo-cloud.github.io/repository/" target="_blank">Open</a>
-  </div>
-
-  <div class="project">
-    <h3>Centrines Collection</h3>
-    <a href="https://japhetcheremo-cloud.github.io/centrines-collection/" target="_blank">Open</a>
-  </div>
-
-  <div class="project">
-    <h3>Hope Believers Ministry</h3>
-    <a href="https://japhetcheremo-cloud.github.io/hope-belivers-ministry/" target="_blank">Open</a>
-  </div>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <h2>Contact Me</h2>
-
-  <form>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<!-- ================= MPESA ================= -->
-<section id="donate">
-  <h2>Buy Me Coffee ☕</h2>
-
-  <div class="mpesa-card">
-    <input type="text" placeholder="Phone Number">
-    <input type="number" placeholder="Amount (KES)">
-    <button onclick="payMpesa()">Pay with M-Pesa</button>
-    <p id="mpesa-status"></p>
-
-    <small>Till: 0719678760</small>
-  </div>
-</section>
-
-<!-- ================= SOCIAL ================= -->
-<footer>
-
-  <div class="social-icons">
-    <a href="https://wa.me/254719678760"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.tiktok.com/@japhet.cheremo"><i class="fab fa-tiktok"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61564247063691"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/honjaphetcheremo/"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:japhetcheremo@gmail.com"><i class="fas fa-envelope"></i></a>
-  </div>
-
-  <p>© 2026 Japhet Cheremo</p>
-</footer>
-
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/254719678760" class="whatsapp-float">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
